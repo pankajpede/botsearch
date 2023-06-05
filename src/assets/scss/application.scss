@@ -1,0 +1,135 @@
+@import "variables.scss";
+@import "fonts.scss";
+@import "reset.scss";
+// //*******************------>> Sections <<------*******************
+//      1. Common Classes
+//          1.1 Fonts
+//          1.2 Text
+//      2. Bootstrap Overright
+//      3. Common Header
+//      4. Home
+
+// 1. Common Classes
+//1.1 Fonts
+.font-10{
+    font-size: 10px;
+}
+.font-12{
+    font-size: 12px;
+}
+.font-14{
+    font-size: 14px;
+    line-height: 20px;
+}
+.font-16{
+    font-size: 16px;
+    line-height: 22px;
+}
+.font-18{
+    font-size: 18px;
+}
+.font-20{
+    font-size: 20px;
+}
+.font-22{
+    font-size: 22px;
+}
+.font-24{
+    font-size: 24px;
+}
+.font-26{
+    font-size: 26px;
+}
+.font-28{
+    font-size: 28px;
+}
+.font-30{
+    font-size: 30px;
+}
+.font-32{
+    font-size: 32px;
+}
+//1.2 Text
+.text-light{
+    font-weight: 300;
+}
+.text-regular{
+    font-weight: 400;
+}
+.text-medium{
+    font-weight: 500;
+}
+.text-semibold{
+    font-weight: 600;
+}
+.text-bold{
+    font-weight: 700;
+}
+.text-itallic{
+    font-style: italic;
+}
+.text-primary{
+    color: $primary !important;
+}
+.text-secondary{
+    color: $secondary !important;
+}
+.text-warning{
+    color: $warning !important;
+}
+.text-danger{
+    color: $danger !important;
+}
+.text-white{
+    color: $white;
+}
+.text-muted{
+    color: $text-200 !important;
+}
+.visibile-none{
+    visibility: hidden;
+}
+
+
+// 2. Bootstrap Overright
+
+// 3. Common Header
+.custom-header{
+    .navbar-brand{
+        img{
+            width: 125px;
+        }
+    }
+}
+
+// 4. Home
+.module-section{
+    // height: 500px;
+    // background-image: url('../images/shapss.svg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: 0 -25px;
+    .top-tab-wrapper{
+        width: 700px;
+        margin: 0 auto;
+        ul{
+            li{
+                a{
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    &:hover, &:active, &:focus, &:active:focus{
+                        background-color: $primary-100;
+                    }
+                }
+                &.active{
+                    a{
+                        background-color: $primary;
+                        &:hover, &:active, &:focus, &:active:focus{
+                            background-color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
